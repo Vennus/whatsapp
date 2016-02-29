@@ -9,7 +9,7 @@ body{
 }
 /*Chat - perfil*/
 .user{
-	height: 640px;
+	height: 540px;
 	margin-top: 1.7%;
 	padding: 0;
 	border:1px solid white;
@@ -18,8 +18,19 @@ body{
 	overflow-y:visible;
 	overflow-x:hidden;
     height: 83%;
+    background:white;
 }
-
+::-webkit-scrollbar {
+    width: 7px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #BEBBB7; 
+}
+ 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px gray; 
+}
 
 .perfil-gian{
 	padding: 2% 3%;
@@ -89,9 +100,9 @@ body{
 
 .chat{
 	background: url(../image/chat-panel-bg.png);
-	background-color: rgba(255, 255, 255, 0.66);
+	background-color: #E4E0DB;
 	border:1px solid white;
-	height: 640px;
+	height: 565px;
 	margin-top: 1.7%;
 	padding: 0;
 }
@@ -125,13 +136,13 @@ body{
 .mensaje{
 	margin-top: 3%;
 	margin-left: 3%;
-	
 }
 .mensaje .usuario{
 	background: white;
 	margin-top: 0.5%;
 	width: 45%;
-	height: 50px;
+	height: 60px;
+	border-radius: 8px;
 }
 .usuario h4 {
 	font-size: 0.8em;
@@ -154,6 +165,8 @@ body{
 	margin-top: 0.5%;
 	width: 35%;
 	height: 50px;
+	border-radius: 5px;
+	background: #DCF8C6;
 }
 .enviar h4 {
 	font-size: 0.8em;
@@ -168,6 +181,63 @@ body{
 .enviar .hora{
 	position: relative;
 	left: 80%;
-	top: 5%;
+	top: -15%;
 	color:#7F7F82;
+}
+/*IMPUT DE ENVIAR MENSAJES*/
+.escribir-mensaje{
+    background: white;
+	height: 60px;
+	padding: 0.6% 0;
+	position: absolute;
+	bottom: 0;	
+	width: 58.2%;
+}
+
+.input-escribir {
+	width: 83%;
+	border-radius: 5px;
+	border:1px solid gray;
+	padding:15px 30px;
+}
+.icon-insert_emoticon{
+	color: gray;
+	padding:12px;
+	font-size: 1.6em;
+}
+.icon-mic{
+	color: gray;
+	padding:12px;
+	font-size: 1.6em;
+}
+/*Colores de letras*/
+.andrea{
+	color:#9CD9F4;
+}
+.mariana{
+	color:#ED78AF;
+}
+.papu{
+	color:#58D2BA;
+}
+.aldo{
+	color:#F0D563;
+}
+
+/*SCROLL*/
+.mensaje{
+	overflow-y:visible;
+	overflow-x:hidden;
+    height: 455px;
+}
+::-webkit-scrollbar {
+    width: 7px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px #BEBBB7; 
+}
+ 
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px gray; 
 }
